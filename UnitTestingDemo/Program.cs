@@ -1,4 +1,5 @@
 ﻿using System;
+using UnitTestingDemo.Untestable;
 
 namespace UnitTestingDemo
 {
@@ -7,6 +8,10 @@ namespace UnitTestingDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            //Untestable
+            //var nowe = new TextCreatorUntestable();
+            //nowe.CreateText("title", "desc");
         }
     }
 }
