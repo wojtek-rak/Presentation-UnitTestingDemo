@@ -24,5 +24,12 @@ namespace UnitTestingDemo
             _sb.Clear();
             return exportedText;
         }
+
+        //public override string ToString()
+        //{
+        //    var sourceText = _sb.ToString();
+        //    _sb.Clear();
+        //    return sourceText;
+        //}
     }
 }
