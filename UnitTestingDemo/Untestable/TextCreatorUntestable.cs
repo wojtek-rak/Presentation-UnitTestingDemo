@@ -9,6 +9,8 @@ namespace UnitTestingDemo.Untestable
     {
         public void CreateText(string title, string description)
         {
+            if (title == "") throw new EmptyTitleException();
+
             var _sb = new StringBuilder();
 
             _sb.AppendLine(title);

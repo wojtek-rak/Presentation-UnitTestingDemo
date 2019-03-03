@@ -1,4 +1,5 @@
 ﻿using System;
+using UnitTestingDemo.CloseToBeTestable;
 using UnitTestingDemo.Untestable;
 
 namespace UnitTestingDemo
@@ -10,8 +11,13 @@ namespace UnitTestingDemo
             Console.WriteLine("Hello World!");
 
             //Untestable
-            //var nowe = new TextCreatorUntestable();
-            //nowe.CreateText("title", "desc");
+            //var creator = new TextCreatorUntestable();
+            //creator.CreateText("title", "desc");
+
+            //CloseToBeTestable
+            //var creator = new FileCreatorClose();
+            //var text = creator.CreateText("title", "desc");
+            //creator.SaveFile(text);
         }
     }
 }
