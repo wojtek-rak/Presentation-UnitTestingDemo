@@ -20,7 +20,7 @@ namespace UnitTestingDemo
             //var text = creator.CreateText("title", "desc");
             //creator.SaveFile(text);
 
-            //CloseToBeTestable
+            //Testable
             //var textCreator = new TextCreator();
             //var creator = new FileCreator(textCreator);
             //var text = creator.CreateText("title", "desc");
