@@ -9,7 +9,7 @@ namespace UnitTestingDemo.Tests
     public class TextCreatorTests
     {
         [Test]
-        public void ExportText_ProperUse_ReturnCorrectStringAndClearSB()
+        public void ExportText_WhenCalled_ReturnCorrectStringAndClearSB()
         {
             //Arrange
             var textCreator = new TextCreator();
