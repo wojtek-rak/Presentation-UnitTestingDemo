@@ -37,6 +37,19 @@ namespace UnitTestingDemo.Tests.Testable
             Assert.AreEqual("Text", result);
         }
 
+        //Fake
+        [Test]
+        public void CreateText_NotEmptyTitle_ProperAddLine3()
+        {
+            var fakeTextCreator = new FakeTextCreator();
+
+            var fileCreator = new FileCreator(fakeTextCreator);
+
+            var result = fileCreator.CreateText("NotEmptyTitle", "desc");
+
+            Assert.AreEqual("Text", result);
+        }
+
         [Test]
         public void CreateText_EmptyTitle_ThrowException()
         {
@@ -47,6 +60,26 @@ namespace UnitTestingDemo.Tests.Testable
 
             Assert.Throws<EmptyTitleException>(() => fileCreator.CreateText(title, "desc"));
             mockTextCreator.Verify(m => m.ExportText(), Times.Never);
+        }
+
+        
+    }
+
+    public class FakeTextCreator : ITextCreator
+    {
+        public void AddTitle(string title)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void AddDescription(string description)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public string ExportText()
+        {
+            return "Text";
         }
     }
 }
