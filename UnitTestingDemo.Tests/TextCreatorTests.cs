@@ -9,6 +9,7 @@ namespace UnitTestingDemo.Tests
     public class TextCreatorTests
     {
         [Test]
+        //Example Name Convention [UnitOfWorkName]_[ScenarioUnderTest]_[ExpectedBehavior]
         public void ExportText_WhenCalled_ReturnCorrectStringAndClearSB()
         {
             //Arrange
